@@ -29,17 +29,7 @@ QX用户注: 使用切换地区功能请确保您的QX=>其他设置=>温和策�
 
 
 
-****************************
-Quantumult X 远程脚本配置 :
-****************************
-[rewrite_local]
-^https:\/\/ap(p|i)\.bili(bili|api)\.(com|net)\/(pgc\/view\/v\d\/app\/season|x\/v\d\/search\/defaultwords)\?access_key url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Bili_Auto_Regions.js
 
-#可选, 适用于搜索指定地区的番剧
-^https:\/\/ap(p|i)\.bili(bili|api)\.(com|net)\/x\/v\d\/search(\/type)?\?.+?%20(%E6%B8%AF|%E5%8F%B0|%E4%B8%AD)& url script-request-header https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Bili_Auto_Regions.js
-
-[mitm]
-hostname = ap?.bilibili.com, ap?.biliapi.net
 
 [filter_local]
 #可选, 由于qx纯tun特性, 不添加规则可能会导致脚本失效.
